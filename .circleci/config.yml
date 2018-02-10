@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stable
+    steps:
+      - checkout
+      - run:
+          name: GCC Installation
+          command: apt-get -y update && apt-get -y install build-essential
+      - run:
+          name: CMAKE Installation
+          command: apt-get -y install cmake
+      - run:
+          name: WGET Installation
+          command: apt-get -y install wget
+      - run:
+          name: Criterion Installation
+          command: chmod +x install_criterion.sh
+          command: ./install_criterion.sh
+      - run:
+          name: run unit tests
+          command: make test_run
