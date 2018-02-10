@@ -100,7 +100,7 @@ int check_builtin(char **commands, char **envp)
 		call_unsetenv(commands, envp);
 		return (1);
 	} else if (my_strcmp(commands[0], "cd") == 0) {
-		call_cd(commands, envp);
+		//call_cd(commands, envp);
 		return (1);
 	}
 	return (0);

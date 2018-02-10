@@ -34,7 +34,8 @@ CRIT_SRC	=	src/analyse.c \
 				src/env.c \
 				src/my_str_isalpha.c \
 				bonus/find_function.c \
-				bonus/get_words_colons.c
+				bonus/get_words_colons.c \
+				bonus/check_builtins.c
 
 CRIT_NAME	=	criterion
 
@@ -56,6 +57,7 @@ clean	:
 
 fclean	:	clean
 			rm -f $(OBJ)
+			rm -f $(CRIT_NAME)
 
 re	:	fclean all
 
