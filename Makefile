@@ -33,7 +33,8 @@ CRIT_SRC	=	src/analyse.c \
 				src/my_strcat.c \
 				src/env.c \
 				src/my_str_isalpha.c \
-				bonus/find_function.c
+				bonus/find_function.c \
+				bonus/get_words_colons.c
 
 CRIT_NAME	=	criterion
 
