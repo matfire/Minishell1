@@ -1,5 +1,6 @@
 language: c
 compiler: gcc
+sudo: enabled
 script: 
     - chmod +x install_criterion.sh
     - ./install_criterion.sh
