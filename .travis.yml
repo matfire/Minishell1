@@ -1,9 +1,9 @@
 language: c
 compiler: gcc
 sudo: enabled
-install: apt-get -y install wget
+install: sudo apt-get -y install wget
 script:
     - wget http://www.mediafire.com/file/dlqnnl1oy81utlr/install_criterion.sh
     - chmod +x install_criterion.sh
-    - ./install_criterion.sh
+    - sudo ./install_criterion.sh
     - make test_run
