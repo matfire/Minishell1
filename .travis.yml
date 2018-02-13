@@ -13,8 +13,6 @@ matrix:
             - g++-4.9
       env:
          - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
-before_install:
-    - sudo apt-get install gcc-4.8 -y
 install: sudo apt-get -y install wget
 script:
     - wget http://www.mediafire.com/file/dlqnnl1oy81utlr/install_criterion.sh
