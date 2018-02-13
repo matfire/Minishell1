@@ -1,3 +1,6 @@
 language: c
 compiler: gcc
-script: make test_run
+script: 
+        chmod +x install_criterion.sh
+        ./install_criterion.sh
+        make test_run
