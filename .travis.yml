@@ -1,6 +1,8 @@
 language: c
 compiler: gcc
 sudo: enabled
+before_install:
+    - sudo apt-get install gcc-4.8 -y
 install: sudo apt-get -y install wget
 script:
     - wget http://www.mediafire.com/file/dlqnnl1oy81utlr/install_criterion.sh
