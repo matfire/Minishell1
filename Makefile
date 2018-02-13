@@ -62,6 +62,6 @@ fclean	:	clean
 
 re	:	fclean all
 
-test_run:			$(OBJ)
+test_run:
 		cc -o $(CRIT_NAME) $(CRIT_SRC) $(LDFLAGS)
 		./$(CRIT_NAME)
