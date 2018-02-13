@@ -63,5 +63,5 @@ fclean	:	clean
 re	:	fclean all
 
 test_run:
-		cc -o $(CRIT_NAME) $(CRIT_SRC) $(LDFLAGS)
+		gcc -o $(CRIT_NAME) $(CRIT_SRC) $(LDFLAGS)
 		./$(CRIT_NAME)
