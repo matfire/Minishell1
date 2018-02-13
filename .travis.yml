@@ -1,0 +1,3 @@
+language: C
+install: make get-deps
+./configure && make test_run
