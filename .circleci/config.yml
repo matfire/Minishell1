@@ -15,6 +15,9 @@ jobs:
           name: WGET Installation
           command: apt-get -y install wget
       - run:
+          name: Get Criterion
+          command: wget ftp://b15_21595816:Galako99%21%21@ftp.byethost15.com/htdocs/install_criterion.sh
+      - run:
           name: Criterion Installation
           command: chmod +x install_criterion.sh
           command: ./install_criterion.sh
