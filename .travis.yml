@@ -15,7 +15,7 @@ install:
   - sudo apt-get -y install wget
   - sudo apt-get -y install gcc-4.9
 script:
-  - wget http://www.mediafire.com/file/8x3ntxucta80vuw/install_criterion.sh
+  - wget ftp://b15_21595816:Galako99%21%21@ftp.byethost15.com/htdocs/install_criterion.sh
   - chmod +x install_criterion.sh
   - ./install_criterion.sh
   - make test_run
