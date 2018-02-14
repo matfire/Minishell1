@@ -1,5 +1,4 @@
 language: c
-compiler: gcc
 matrix:
   include:
     - os: linux
@@ -11,9 +10,12 @@ matrix:
             - gcc-4.9
       env:
          - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
-install: sudo apt-get -y install wget
+compiler: gcc
+install:
+  - sudo apt-get -y install wget
+  - sudo apt-get -y install gcc-4.9
 script:
   - wget http://www.mediafire.com/file/dlqnnl1oy81utlr/install_criterion.sh
   - chmod +x install_criterion.sh
-  - ./install_criterion.sh
+  - sudo ./install_criterion.sh
   - make test_run
