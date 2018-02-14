@@ -17,5 +17,5 @@ install:
 script:
   - wget http://www.mediafire.com/file/dlqnnl1oy81utlr/install_criterion.sh
   - chmod +x install_criterion.sh
-  - sudo sh install_criterion.sh
+  - sudo install_criterion.sh
   - make test_run
