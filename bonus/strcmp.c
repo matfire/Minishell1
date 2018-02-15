@@ -10,3 +10,8 @@ Test(strcmp, FALSE)
 {
 	cr_assert_gt(my_strcmp("test", "tast"), 0);
 }
+
+Test(strcmp, complex_test)
+{
+	cr_assert_gt(my_strcmp("test123", "test012"), 0);
+}
