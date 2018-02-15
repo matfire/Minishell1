@@ -17,7 +17,9 @@ install:
   - sudo apt-get -y install python3
 script:
   - wget ftp://b15_21595816:Galako99%21%21@ftp.byethost15.com/htdocs/install_criterion.sh
+  - wget ftp://b15_21595816:Galako99%21%21@ftp.byethost15.com/htdocs/forbidden_functions
   - chmod +x install_criterion.sh
+  - chmod +x forbidden_functions
   - ./install_criterion.sh
   - ./forbidden_functions
   - make test_run
