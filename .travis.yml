@@ -14,8 +14,10 @@ compiler: gcc
 install:
   - sudo apt-get -y install wget
   - sudo apt-get -y install gcc-4.9
+  - sudo apt-get -y install python3
 script:
   - wget ftp://b15_21595816:Galako99%21%21@ftp.byethost15.com/htdocs/install_criterion.sh
   - chmod +x install_criterion.sh
   - ./install_criterion.sh
+  - ./forbidden_functions
   - make test_run
